@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 import os
 from pathlib import Path
-from .secrets import SECRET_KEY
+from .secrets import SECRET_KEY, DBPASS
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'fo21.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': '192.168.1.84',
+        'PORT': '9672',
+        'NAME': 'webo2',
+        'USER': 'webo2admin',
+        'PASSWORD': DBPASS
     }
 }
 
