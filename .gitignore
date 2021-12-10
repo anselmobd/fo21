@@ -1,6 +1,9 @@
 # Specific to the production environment
 src/fo21/secrets.py
 
+# NOHUP
+nohup.out
+
 ####
 
 # Byte-compiled / optimized / DLL files
