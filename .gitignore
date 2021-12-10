@@ -1,3 +1,8 @@
+# Specific to the production environment
+etc/secret_key.txt
+
+#### 
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
