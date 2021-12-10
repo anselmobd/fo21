@@ -1,7 +1,7 @@
 # Specific to the production environment
-etc/secret_key.txt
+src/fo21/secrets.py
 
-#### 
+####
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
