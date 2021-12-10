@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from fo21.views import index
+
 urlpatterns = [
+    path('', index.view, name='index'),
+
     path('admin/', admin.site.urls),
 ]
