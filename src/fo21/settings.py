@@ -29,8 +29,12 @@ ROOT_DIR = os.path.dirname(BASE_DIR)
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    # localhost
     'localhost', '127.0.0.1',
+    # development
     'tussor.local',
+    # production
+    'web.tussor',
 ]
 
 
