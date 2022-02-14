@@ -28,7 +28,10 @@ ROOT_DIR = os.path.dirname(BASE_DIR)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost', '127.0.0.1',
+    'tussor.local',
+]
 
 
 # Application definition
